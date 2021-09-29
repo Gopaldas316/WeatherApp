@@ -1,0 +1,126 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color : rgb(7, 13, 99);
+    font-size: 1.5rem;
+    transition : all 0.5s ease;
+}
+
+main {
+    min-height : 100vh;
+    background : linear-gradient(to right top, #65dfc9, #04197a);
+    display : grid;
+    place-items : center;
+}
+
+
+.container {
+    height : 65%;
+    width : 30%;
+    background : linear-gradient(45deg, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+    backdrop-filter : blur(3px);
+    border-radius : 2rem;
+    padding : 1rem 1rem 1rem 1rem;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    height : 20%;
+    margin  :0;
+}
+
+input {
+    appearance:  none;
+    border : none;
+    outline  :none;
+    padding : 10px;
+    font-size : 1rem;
+    color :rgb(7, 13, 99);
+    width : 100%;
+    height : 50%;
+    border-radius : 10px;
+    transition : all 0.2s ease;
+    background-color: rgba(181, 215, 255, 0.3);
+}
+
+input:hover {
+    background-color: rgba(rgb(106, 220, 248), 0.3);
+}
+
+button {
+    width : 10px;
+    height : 10px;
+}
+
+.middle {
+    flex :1;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width : 700px)
+{
+    .container{
+        width : 40%;
+    }
+    .middle {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .cloud {
+        right : 50%;
+        height : 10vh;
+        width : 35vh;
+    }
+    body {
+        font-size : 1rem; 
+    }
+
+}
+
+img {
+    max-width : 60%;
+    max-height : 60%;
+    object-fit: cover;
+}
+.content {
+    width : 100%;
+}
+
+.details {
+    flex : 1;
+    display :flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width : 100%;
+    text-align : center;
+    flex-direction: column;
+}
+
+.cloud {
+    height : 25vh;
+    position: absolute;
+    right : 20%;
+    top : 5%;
+}
+
+.descrption {
+    margin : 1rem;
+}
